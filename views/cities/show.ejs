@@ -10,7 +10,7 @@
                 <p class="card-text"><%= city.phrase %></p>
                 <p class="card-text"><strong>Geocoordinates:</strong> <%= city.geocoordinates %></p>
                 <div class="row">
-                    <% city.image.forEach((img, index) => { %>
+                    <% city.images.forEach((img, index) => { %>
                         <div class="col-md-4">
                             <div class="card mb-4 shadow-sm">
                                 <img src="<%= img.imgUrl %>" class="card-img-top" alt="Image <%= index + 1 %>" style="width: 200px; height: 200px; object-fit: cover;">

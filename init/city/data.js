@@ -21,8 +21,6 @@ const indianCities = [
         geocoordinates: "26.9124° N, 75.7873° E",
         state: "Rajasthan",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     {
@@ -44,8 +42,6 @@ const indianCities = [
         geocoordinates: "24.5854° N, 73.7125° E",
         state: "Rajasthan",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     {
@@ -67,8 +63,6 @@ const indianCities = [
         geocoordinates: "26.2389° N, 73.0243° E",
         state: "Rajasthan",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     // Uttar Pradesh Cities
@@ -91,8 +85,6 @@ const indianCities = [
         geocoordinates: "26.8467° N, 80.9462° E",
         state: "Uttar Pradesh",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     {
@@ -114,8 +106,6 @@ const indianCities = [
         geocoordinates: "25.3176° N, 82.9739° E",
         state: "Uttar Pradesh",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     {
@@ -137,8 +127,6 @@ const indianCities = [
         geocoordinates: "27.1767° N, 78.0081° E",
         state: "Uttar Pradesh",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     },
     {
         name: "Prayagraj",
@@ -159,8 +147,6 @@ const indianCities = [
         geocoordinates: "25.4484° N, 81.8330° E",
         state: "Uttar Pradesh",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     },   
 
     // Maharashtra Cities
@@ -183,8 +169,6 @@ const indianCities = [
         geocoordinates: "19.0760° N, 72.8777° E",
         state: "Maharashtra",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     }
     ,
     {
@@ -206,8 +190,6 @@ const indianCities = [
         geocoordinates: "18.5204° N, 73.8567° E",
         state: "Maharashtra",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     },
     {
         name: "Nagpur",
@@ -228,8 +210,6 @@ const indianCities = [
         geocoordinates: "21.1458° N, 79.0882° E",
         state: "Maharashtra",
         croute: "",
-        food: [new mongoose.Types.ObjectId("66e4a76b8ba12978e3b65d7c")],
-        places: [new mongoose.Types.ObjectId("66e4a67b9e01e779eba52248")],
     },
 ];
 

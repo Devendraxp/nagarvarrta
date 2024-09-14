@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const Food=require("./food.js");
-const Place=require("./place.js");
-
 const imageSchema = new Schema({
   filename: String,
   imgUrl: {
@@ -28,14 +25,6 @@ const citySchema = new Schema({
     key4:String,
     key5:String,
   },
-  food:[{
-    type:Schema.Types.ObjectId,
-    ref:Food,
-  }],
-  places:[{
-    type:Schema.Types.ObjectId,
-    ref:Place,
-  }],
 });
 
 citySchema.pre("save", function (next) {
