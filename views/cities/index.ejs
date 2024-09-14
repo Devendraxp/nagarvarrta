@@ -1,0 +1,16 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+<body>
+    <h1> Welcome to <%= route %> </h1>
+
+    <% for(city of citiesList) {%>
+           <h2><%= city.name  %> </h2>
+           <p> <%= city.description %> </p>
+           <a href="<%=route%>/<%= city._id %>"><button class="btn btn-danger"> Show more</button> </a>
+           <br>
+
+    
+    <br>
+    <% } %>
+    <a href="/<%= route %>/new"><button class="btn btn-primary"> New cities </button></a>
+</body>

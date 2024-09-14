@@ -1,0 +1,76 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+<body>
+    <br>
+    <h3>Add new city</h3>
+    <br>
+   <div class="col-8 offset-1">
+    <form method="POST" action="/<%=route%>" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name of City</label>
+              <input type="text" class="form-control" id="name" name="city[name]" placeholder="Enter city name" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid city name.</div>
+            </div>
+          
+            <div class="mb-3">
+              <label for="phrase" class="form-label">phrase</label>
+              <textarea class="form-control" id="phrase" name="city[phrase]" rows="3" placeholder="Enter phrase" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">phrase must be between 1-300 characters.</div>
+            </div>
+          
+            <div class="mb-3">
+              <label for="historyKey1" class="form-label">History 1</label>
+              <textarea class="form-control" id="historyKey1" name="city[history][key1]" rows="3" placeholder="Enter history 1" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid history.</div>
+          </div>
+          
+          <div class="mb-3">
+              <label for="historyKey2" class="form-label">History 2</label>
+              <textarea class="form-control" id="historyKey2" name="city[history][key2]" rows="3" placeholder="Enter history 2" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid history.</div>
+          </div>
+          
+          <div class="mb-3">
+              <label for="historyKey3" class="form-label">History 3</label>
+              <textarea class="form-control" id="historyKey3" name="city[history][key3]" rows="3" placeholder="Enter history 3" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid history.</div>
+          </div>
+          
+          <div class="mb-3">
+              <label for="historyKey4" class="form-label">History 4</label>
+              <textarea class="form-control" id="historyKey4" name="city[history][key4]" rows="3" placeholder="Enter history 4" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid history.</div>
+          </div>
+          
+          <div class="mb-3">
+              <label for="historyKey5" class="form-label">History 5</label>
+              <textarea class="form-control" id="historyKey5" name="city[history][key5]" rows="3" placeholder="Enter history 5" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid history.</div>
+          </div>
+          
+          
+            <div class="mb-3">
+              <label for="geocoordinate" class="form-label">Geocoordinate</label>
+              <input type="text" class="form-control" id="geocoordinate" name="city[geocoordinate]" placeholder="Enter geocoordinate" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid geocoordinate.</div>
+            </div>
+          
+            <div class="mb-3">
+              <label for="state" class="form-label">State</label>
+              <input type="text" class="form-control" id="state" name="city[state]" placeholder="Enter state" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid state.</div>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   </div>
+</body>

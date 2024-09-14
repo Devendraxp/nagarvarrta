@@ -1,0 +1,111 @@
+
+<% layout("/layouts/boilerplate")%>
+
+<div class="row mt-3 editform" >
+  <div class="col-8 offset-2" id="all2">
+    <br>
+    <h3>Edit City</h3> <br>
+
+    <form method="POST" action="/route/<%= route._id %>?_method=PUT"
+          novalidate  
+          class="needs-validation" 
+          enctype="multipart/form-data"> 
+
+      <div class="mb-3">
+        <label for="name" class="form-label"> <b>Name</b> </label>
+        <input name="city[name]" value="<%= city.name %>" 
+               type="text" class="form-control" required/>
+        <div class="valid-feedback">name looks good!!</div>
+      </div>
+
+      <div class="mb-3"> 
+        <label for="description" class="form-label"> <b>description</b> </label>
+        <textarea name="city[description]" class="form-control" required> 
+                  <%= city.description %> </textarea>
+        <div class="invalid-feedback">Please enter a short description</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="history" class="form-label" ><b>History</b> </label>
+        <div class="row mb-2">
+          <div class="col">
+        <input name="city[history][key1]" type="text" 
+        class="form-control" 
+        id="key1" 
+        value="<%= city.history.key1 %>" 
+        placeholder="Enter 1st history" 
+        required>
+      </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col">
+      <input name="city[history][key2]" type="text" 
+      class="form-control" 
+      id="key2" 
+      value="<%= city.history.key2 %>" 
+      placeholder="Enter 2nd history" 
+      required>
+    </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col">
+    <input name="city[history][key3]" type="text" 
+    class="form-control" 
+    id="key3" 
+    value="<%= city.history.key3 %>" 
+    placeholder="Enter 3rd history" 
+    required>
+  </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col">
+  <input name="city[history][key4]" type="text" 
+  class="form-control" 
+  id="key4" 
+  value="<%= city.history.key4 %>" 
+  placeholder="Enter 4th history" 
+  required>
+</div>
+</div>
+
+<div class="row mb-2">
+  <div class="col">
+<input name="city[history][key5]" type="text" 
+class="form-control" 
+id="key5" 
+value="<%= city.history.key5 %>" 
+placeholder="Enter 5th history" 
+required>
+</div>
+</div>
+      </div>
+
+      
+  
+    <div class="mb-3 col-md-8">
+      <label for="geocordinate" class="form-label"> <b>Geocordinate</b> </label>
+      <input name="city[geocordinate]" value="<%= city.geocordinate %>" type="text" 
+             class="form-control"  required />
+
+      <div class="invalid-feedback">Geocordinate name should be valid</div>
+    </div>
+  </div>
+
+      <div class="mb-3">
+        <label for="state" class="form-label" > <b>State</b> </label>
+        <input name="city[state]" value="<%= city.state %>" 
+               type="text" class="form-control"  required />
+
+        <div class="invalid-feedback">Location should be valid</div>
+      </div>
+       
+      <button class="btn btn-success editbtn mt-3">Edit</button>
+      <br><br>
+    </form>
+  
+  </div>
+</div>
+   

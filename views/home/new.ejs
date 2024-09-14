@@ -1,0 +1,90 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+<body>
+    <br>
+    <h3>Add new state </h3>
+    <br>
+   <div class="col-8 offset-1">
+    <form method="POST" action="/" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name of state</label>
+              <input type="text" class="form-control" id="name" name="state[name]" placeholder="Enter state name" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid state name.</div>
+            </div>
+          
+            <div class="mb-3">
+              <label for="phrase" class="form-label">phrase</label>
+              <textarea class="form-control" id="phrase" name="state[phrase]" rows="3" placeholder="Enter phrase" required></textarea>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">phrase must be between 1-300 characters.</div>
+            </div>
+          
+            <div class="mb-3">
+                <label for="history" class="form-label">History</label>
+                
+              
+                <div class="row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" id="key1" name="state[history][key1]" placeholder="Enter Key 1" required>
+                  </div>
+                </div>
+           
+                <div class="row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" id="key2" name="state[history][key2]" placeholder="Enter Key 2" required>
+                  </div>
+                </div>
+              
+             
+                <div class="row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" id="key3" name="state[history][key3]" placeholder="Enter Key 3" required>
+                  </div>
+                </div>
+              
+               
+                <div class="row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" id="key4" name="state[history][key4]" placeholder="Enter Key 4" required>
+                  </div>
+                </div>
+              
+           
+                <div class="row mb-2">
+                  <div class="col">
+                    <input type="text" class="form-control" id="key5" name="state[history][key5]" placeholder="Enter Key 5" required>
+                  </div>
+                </div>
+              
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide all key-value pairs of history.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="phrase" class="form-label">Festivals</label>
+                <textarea class="form-control" id="phrase" name="state[festivals]" rows="3" placeholder="Enter festivals" required></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">give valid festival name</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="phrase" class="form-label">Speciality</label>
+                <textarea class="form-control" id="phrase" name="state[speciality]" rows="3" placeholder="Enter speciality" required></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">enter some valid speciality.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="phrase" class="form-label">route</label>
+                <textarea class="form-control" id="phrase" name="state[route]" rows="3" placeholder="Enter route" required></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">enter a valid state route</div>
+              </div>
+
+
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   </div>
+</body>

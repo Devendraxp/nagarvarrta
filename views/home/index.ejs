@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate.ejs') -%>
+  <body>
+   <h1>HOME</h1>
+
+    <% for( state of states ){ %>
+
+    <a href='<%=state.route%>'> <%= state.stateName %></a> <br>
+
+    <% } %>
+    <br><br><br>
+    <!-- <a href="/new"> <button class="btn btn-success">NEW</button> </a> -->
+  </body>
