@@ -16,7 +16,7 @@ const foodSchema=new Schema({
     description:String,
     city:{ type: String, default: "Unknown" },
     croute:{ type: String, default: "Unknown" },
-    geocoordinate:String,
+    geocoordinate:{},
     image:[imageSchema],
     history:{
         key1:String,

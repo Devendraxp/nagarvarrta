@@ -19,12 +19,3 @@ module.exports={data1:foodIndian};
 
 
 
-
-
-// city:String,
-//     croute:String,
-//     geocoordinate:String,
-//     image:[imageSchema],
-//     history:{
-//         key1:String,
-//     },
