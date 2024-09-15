@@ -20,7 +20,7 @@ const stateSchema=new Schema({
       artH:String,
       },
       image:[imageSchema],
-      speciality:String,
+      speciality:[String],
       route:String,
       HnC:{
         MnD: String,

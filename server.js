@@ -30,7 +30,8 @@ mongoose
 
 // routesphrase
 //home page
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+  const stateList = await State.find();
   res.render("home/index.ejs", { states });
 });
 
