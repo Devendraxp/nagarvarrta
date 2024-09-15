@@ -11,12 +11,5 @@ module.exports = states = [
         stateName: "Uttar Pradesh",
         route:"/up"
     },
-    {
-        stateName: "Jammu and Kashmir",
-        route:"/jk"
-    },
-    {
-        stateName: "Gujarat",
-        route:"/gujarat"
-    }
+   
 ]

@@ -20,7 +20,6 @@ const initDB=async()=>{
     await Cities.deleteMany({});
     console.log("Data was initialized");
     await Cities.insertMany(initdata.data);
-    // console.log(initdata.data[0].images);
 };
 
 
