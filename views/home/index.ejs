@@ -3,41 +3,49 @@
   <h1>HOME</h1>
 
   <% for (state of stateList) { %>
-    <div class="card mb-3">
-      <div class="card-header">
-        <h2><%= state.name %></h2>
-        <p><%= state.phrase %></p>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Specialities</h5>
-        <ul>
-          <% state.speciality.forEach(function(item) { %>
-            <li><%= item %></li>
-          <% }); %>
-        </ul>
-        <h5 class="card-title">History</h5>
-        <p>War: <%= state.history.war %></p>
-        <p>Empire: <%= state.history.ecto %></p>
-        <p>Art & Heritage: <%= state.history.artH %></p>
-        <h5 class="card-title">Culture</h5>
-        <p>Main Dish: <%= state.HnC.MnD %></p>
-        <p>Attire: <%= state.HnC.attire %></p>
-        <p>Festivals: <%= state.HnC.festivals.join(', ') %></p>
-        <p>Folk Tales: <%= state.HnC.folkTales.join(', ') %></p>
-        <p>Flora & Fauna: <%= state.HnC.FnF.join(', ') %></p>
-        <p>Lifestyle: <%= state.HnC.lifeStyle.join(', ') %></p>
-        <h5 class="card-title">Images</h5>
-        <% state.image.forEach(function(image) { %>
-          <p> <%= image.file_name  %>  </p>
-          <img src="<%= image.img_url %>" class="img-fluid" alt="<%= image.file_name %>">
-        <% }); %>
-      </div>
-      <div class="card-footer">
-        <a href="<%= state.route %>" class="btn btn-primary">Learn More</a>
-      </div>
+  <div class="card mb-3">
+    <div class="card-header">
+      <h2><%= state.name %></h2>
+      <p><%= state.phrase %></p>
     </div>
+    <div class="card-body">
+      <h5 class="card-title">Specialities</h5>
+      <ul>
+        <% state.speciality.forEach(function(item) { %>
+        <li><%= item %></li>
+        <% }); %>
+      </ul>
+      <h5 class="card-title">History</h5>
+      <ul>
+        <% state.history.war.forEach(function(war) { %>
+        <li><%= war %></li>
+        <% }); %>
+      </ul>
+      <p>Empire: <%= state.history.ecto %></p>
+      <p>Art & Heritage: <%= state.history.artH %></p>
+      <h5 class="card-title">Culture</h5>
+      <p>Main Dish: <%= state.HnC.MnD.join(', ') %></p>
+      <p>Attire: <%= state.HnC.attire %></p>
+      <p>Festivals: <%= state.HnC.festivals.join(', ') %></p>
+      <p>Folk Tales: <%= state.HnC.folkTales.join(', ') %></p>
+      <p>Flora & Fauna: <%= state.HnC.FnF.join(', ') %></p>
+      <p>Lifestyle: <%= state.HnC.lifeStyle.join(', ') %></p>
+      <h5 class="card-title">Images</h5>
+      <% state.image.forEach(function(image) { %>
+      <p><%= image.file_name %></p>
+      <img
+        src="<%= image.img_url %>"
+        class="img-fluid"
+        alt="<%= image.file_name %>"
+      />
+      <% }); %>
+    </div>
+    <div class="card-footer">
+      <a href="<%= state.route %>" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
   <% } %>
 
-  <br><br><br>
+  <br /><br /><br />
   <a href="/new"> <button class="btn btn-success">NEW</button> </a>
 </body>
