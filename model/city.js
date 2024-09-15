@@ -16,15 +16,15 @@ const citySchema = new Schema({
   state: String,
   route: String,
   croute:String,
-  geocoordinates: String,
+  geocoordinates: [Number],
   images: [imageSchema],
   history:{
-    key1:String,
-    key2:String,
-    key3:String,
-    key4:String,
-    key5:String,
+    war:String,
+    ecto:String,
+    artH:String,
   },
+  GnL:[String],
+  speciality:[String],
 });
 
 citySchema.pre("save", function (next) {

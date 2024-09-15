@@ -15,16 +15,21 @@ const stateSchema=new Schema({
     name:String,
     phrase:String,
     history:{
-        key1:String,
-        key2:String,
-        key3:String,
-        key4:String,
-        key5:String,
+      war:String,
+      ecto:String,
+      artH:String,
       },
       image:[imageSchema],
-      festivals:String,
       speciality:String,
       route:String,
+      HnC:{
+        MnD: String,
+        attire: String,
+        festivals: [String],
+        folkTales : [String],
+        FnF : [String],
+        lifeStyle: [String],
+      },
 });
 
 
