@@ -1,90 +1,111 @@
 <% layout('layouts/boilerplate.ejs') -%>
 
 <body>
-    <br>
-    <h3>Add new state </h3>
-    <br>
-   <div class="col-8 offset-1">
+  <br>
+  <h3>Add new state </h3>
+  <br>
+  <div class="col-8 offset-1">
     <form method="POST" action="/" class="needs-validation" novalidate>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name of state</label>
-              <input type="text" class="form-control" id="name" name="state[name]" placeholder="Enter state name" required>
-              <div class="valid-feedback">Looks good!</div>
-              <div class="invalid-feedback">Please provide a valid state name.</div>
-            </div>
-          
-            <div class="mb-3">
-              <label for="phrase" class="form-label">phrase</label>
-              <textarea class="form-control" id="phrase" name="state[phrase]" rows="3" placeholder="Enter phrase" required></textarea>
-              <div class="valid-feedback">Looks good!</div>
-              <div class="invalid-feedback">phrase must be between 1-300 characters.</div>
-            </div>
-          
-            <div class="mb-3">
-                <label for="history" class="form-label">History</label>
-                
-              
-                <div class="row mb-2">
-                  <div class="col">
-                    <input type="text" class="form-control" id="key1" name="state[history][key1]" placeholder="Enter Key 1" required>
-                  </div>
-                </div>
-           
-                <div class="row mb-2">
-                  <div class="col">
-                    <input type="text" class="form-control" id="key2" name="state[history][key2]" placeholder="Enter Key 2" required>
-                  </div>
-                </div>
-              
-             
-                <div class="row mb-2">
-                  <div class="col">
-                    <input type="text" class="form-control" id="key3" name="state[history][key3]" placeholder="Enter Key 3" required>
-                  </div>
-                </div>
-              
-               
-                <div class="row mb-2">
-                  <div class="col">
-                    <input type="text" class="form-control" id="key4" name="state[history][key4]" placeholder="Enter Key 4" required>
-                  </div>
-                </div>
-              
-           
-                <div class="row mb-2">
-                  <div class="col">
-                    <input type="text" class="form-control" id="key5" name="state[history][key5]" placeholder="Enter Key 5" required>
-                  </div>
-                </div>
-              
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please provide all key-value pairs of history.</div>
-              </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name of state</label>
+        <input type="text" class="form-control" id="name" name="state[name]" placeholder="Enter state name" required>
+        <div class="valid-feedback">Looks good!</div>
+        <br>
+       <label for="phrase" class="form-label">Phrase</label>
+        <input type="text" class="form-control" id="phrase" name="state[phrase]" placeholder="Enter phrase" required>
+        <div class="invalid-feedback">Please provide a valid state name.</div>
+      </div>
 
-              <div class="mb-3">
-                <label for="phrase" class="form-label">Festivals</label>
-                <textarea class="form-control" id="phrase" name="state[festivals]" rows="3" placeholder="Enter festivals" required></textarea>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">give valid festival name</div>
-              </div>
+      <div class="mb-3">
+      <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Phrase must be between 1-300 characters.</div>
+      </div>
 
-              <div class="mb-3">
-                <label for="phrase" class="form-label">Speciality</label>
-                <textarea class="form-control" id="phrase" name="state[speciality]" rows="3" placeholder="Enter speciality" required></textarea>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">enter some valid speciality.</div>
-              </div>
+      <div class="mb-3">
+        <label for="coordinates" class="form-label">Coordinates</label>
+        <input type="text" class="form-control" id="coordinates" name="state[geometry][coordinates]" placeholder="Enter coordinates (e.g., 19.0760, 72.8777)" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide valid coordinates.</div>
+      </div>
 
-              <div class="mb-3">
-                <label for="phrase" class="form-label">route</label>
-                <textarea class="form-control" id="phrase" name="state[route]" rows="3" placeholder="Enter route" required></textarea>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">enter a valid state route</div>
-              </div>
+      <div class="mb-3">
+        <label for="route" class="form-label">Route</label>
+        <textarea class="form-control" id="route" name="state[route]" rows="3" placeholder="Enter route" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter a valid state route.</div>
+      </div>
 
+      <div class="mb-3">
+        <label for="speciality" class="form-label">Speciality</label>
+        <textarea class="form-control" id="speciality" name="state[speciality]" rows="3" placeholder="Enter speciality" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter some valid speciality.</div>
+      </div>
 
-          
-            <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="mb-3">
+        <label for="festivals" class="form-label">Festivals</label>
+        <textarea class="form-control" id="festivals" name="state[HnC][festivals]" rows="3" placeholder="Enter festivals" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Give valid festival names.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="MnD" class="form-label">Music and Dance</label>
+        <input type="text" class="form-control" id="MnD" name="state[HnC][MnD]" placeholder="Enter main dish" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide a valid main dish.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="attire" class="form-label">Attire</label>
+        <input type="text" class="form-control" id="attire" name="state[HnC][attire]" placeholder="Enter attire" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide a valid attire.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="folkTales" class="form-label">Folk Tales</label>
+        <textarea class="form-control" id="folkTales" name="state[HnC][folkTales]" rows="3" placeholder="Enter folk tales" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter valid folk tales.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="FnF" class="form-label">Flora and Fauna</label>
+        <textarea class="form-control" id="FnF" name="state[HnC][FnF]" rows="3" placeholder="Enter flora and fauna" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter valid flora and fauna.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lifeStyle" class="form-label">Lifestyle</label>
+        <textarea class="form-control" id="lifeStyle" name="state[HnC][lifeStyle]" rows="3" placeholder="Enter lifestyle" required></textarea>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Enter valid lifestyle.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="war" class="form-label">War History</label>
+        <input type="text" class="form-control" id="war" name="state[history][war]" placeholder="Enter war" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide a valid war.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="ecto" class="form-label">Ecto History</label>
+        <input type="text" class="form-control" id="ecto" name="state[history][ecto]" placeholder="Enter ecto" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide a valid ecto.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="artH" class="form-label">Art History</label>
+        <input type="text" class="form-control" id="artH" name="state[history][artH]" placeholder="Enter art history" required>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please provide a valid art history.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-   </div>
+  </div>
 </body>

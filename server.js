@@ -4,7 +4,6 @@ const app = express();
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
-const states = require("./utils/statesNames");
 const City = require("./model/city.js");
 const State = require("./model/state.js");
 
@@ -31,8 +30,8 @@ mongoose
 // routesphrase
 //home page
 app.get("/", async (req, res) => {
-  const stateList = await State.find();
-  res.render("home/index.ejs", { states });
+  const stateList = await State.find({});
+  res.render("home/index.ejs", { stateList });
 });
 
 //add new state
