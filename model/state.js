@@ -14,6 +14,17 @@ const imageSchema = new Schema({
 const stateSchema=new Schema({
     name:String,
     phrase:String,
+    geometry: {
+      type: {
+        type: String, 
+        enum: ['Point'], 
+        required: true
+      },
+      coordinates: {
+        type: [Number],
+        required: true
+      }
+    },
     history:{
       war:String,
       ecto:String,

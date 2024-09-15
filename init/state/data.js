@@ -2,7 +2,10 @@ const statesData = [
     {
       name: "Rajasthan",
       phrase: "The Land of Kings",
-      geocoordinates: [26.2389, 73.0243],
+      geometry: {
+        type: "Point",
+        coordinates: [26.2389, 73.0243]
+      },
       route:"/rajasthan",
       image: [
         { file_name: "file", img_url: "https://unsplash.com/photos/green-mountain-under-white-sky-during-daytime-DrJtwNe6AcQ" },
@@ -27,7 +30,10 @@ const statesData = [
     {
       name: "Uttar Pradesh",
       phrase: "The Heartland of India",
-      geocoordinates: [26.8467, 80.9462],
+      geometry: {
+        type: "Point",
+        coordinates: [26.8467, 80.9462]
+      },
       route:"/up",
       image: [
         { file_name: "file", img_url: "https://unsplash.com/photos/a-very-large-building-with-a-massive-entrance-EOm5YV73zns" },
@@ -52,7 +58,10 @@ const statesData = [
     {
       name: "Maharashtra",
       phrase: "The Gateway of India",
-      geocoordinates: [19.0760, 72.8777],
+      geometry: {
+        type: "Point",
+        coordinates: [19.0760, 72.8777]
+      },
       route:"/maharashtra",
       image: [
         { file_name: "file", img_url: "https://unsplash.com/photos/grayscale-photo-of-train-rail-lvf0AQTQJyE" },
