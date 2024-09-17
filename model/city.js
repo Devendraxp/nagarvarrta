@@ -16,7 +16,17 @@ const citySchema = new Schema({
   state: String,
   route: String,
   croute:String,
-  geocoordinates: [Number],
+  geometry: {
+    type: {
+      type: String, 
+      enum: ['Point'], 
+      required: true
+    },
+    coordinates: {
+      type: [Number],
+      required: true
+    }
+  },
   images: [imageSchema],
   history:{
     war:String,

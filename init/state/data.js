@@ -9,19 +9,19 @@ const statesData = [
     route: "/rajasthan",
     image: [
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/green-mountain-under-white-sky-during-daytime-DrJtwNe6AcQ",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1621427639820-fb18ffbe8a38?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/white-boat-on-sea-under-gray-clouds-VYb9sZFUol4",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1622463666127-579bfd5b8c50?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/a-couple-of-camels-that-are-standing-in-the-dirt-MV1_jLJsNhA",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1698759087628-22a6460560df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
     speciality: ["Handicrafts", "Jewelry", "Textiles"],
@@ -49,19 +49,19 @@ const statesData = [
     route: "/up",
     image: [
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/a-very-large-building-with-a-massive-entrance-EOm5YV73zns",
+        filename: "file",
+        imgUrl:
+          "https://plus.unsplash.com/premium_photo-1697729634472-bb82561ef296?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/a-large-building-with-columns-and-a-clock-tower-in-the-background-In2FAii6cxc",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1688287580970-70fe8e0f4bef?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/a-large-building-with-towers-with-taj-mahal-in-the-background-_P5F9l4XNMA",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1650703974678-6a71a9f48a5b?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
     speciality: ["Chikan Embroidery", "Zardozi", "Banarasi Silk"],
@@ -89,19 +89,19 @@ const statesData = [
     route: "/maharashtra",
     image: [
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/grayscale-photo-of-train-rail-lvf0AQTQJyE",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1589813562519-9b71368a1656?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/white-and-black-concrete-building-aW8kdtqXMcs",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1601039913996-d74e58095333?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        file_name: "file",
-        img_url:
-          "https://unsplash.com/photos/a-large-building-with-a-red-roof-O6bRaPpZCD0",
+        filename: "file",
+        imgUrl:
+          "https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ],
     speciality: ["Warli Art", "Kolhapuri Chappal", "Paithani Saree"],
