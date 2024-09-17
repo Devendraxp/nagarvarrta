@@ -25,6 +25,12 @@
                     </ul>
 
                     <h3>Specialities</h3>
+                    <ul>
+                        <% city[0].speciality.forEach((special)=>{ %>
+                            <li><%= special%></li>
+
+                       <% }) %>
+                    </ul>
                 <% } else { %>
                     <p>City details are not available.</p>
                 <% } %>
