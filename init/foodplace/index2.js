@@ -18,8 +18,8 @@ async function main() {
 
 const initDB = async () => {
   // await Place.insertMany(initdata2.data2); 
-  // await Food.insertMany(initdata1.data1);
-  // console.log("Data was initialized");
+  await Food.insertMany(initdata1.data1);
+  console.log("Data was initialized");
 
 };
 
