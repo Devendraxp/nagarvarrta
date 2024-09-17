@@ -3,29 +3,32 @@
     <div class="container mt-5">
         <div class="card">
             <div class="card-header">
-                <h1><%= city.name %></h1>
+                <% if (city && city.length > 0) { %>
+                    <h1><%= city[0].name %></h1>
+                <% } else { %>
+                    <h1>City not found</h1>
+                <% } %>
             </div>
             <div class="card-body">
-                <h5 class="card-title">State: <%= city.state %></h5>
-                <p class="card-text"><%= city.phrase %></p>
-                <p class="card-text"><strong>Geocoordinates:</strong> <%= city.geocoordinates %></p>
-                <div class="row">
-                    <% city.images.forEach((img, index) => { %>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-sm">
-                                <img src="<%= img.imgUrl %>" class="card-img-top" alt="Image <%= index + 1 %>" style="width: 200px; height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <p class="card-text">Image <%= index + 1 %></p>
-                                </div>
-                            </div>
-                        </div>
-                    <% }) %>
-                </div>
+                <% if (city && city.length > 0) { %>
+                    <h5 class="card-title">State: <%= city[0].state %></h5>
+                   
+                    <h3>History</h3>
+                    <p><strong>War:</strong> <%= city[0].history.war %></p>
+                    <p><strong>Art & Heritage:</strong> <%= city[0].history.artH %></p>
+
+                    <h3>Ghosts and Legends</h3>
+                    <ul>
+                        <% city[0].GnL.forEach((story) => { %>
+                            <li><%= story %></li>
+                        <% }) %>
+                    </ul>
+
+                    <h3>Specialities</h3>
+                <% } else { %>
+                    <p>City details are not available.</p>
+                <% } %>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

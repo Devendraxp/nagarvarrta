@@ -68,19 +68,18 @@ app.get("/:route/new", (req, res) => {
 app.post("/:route", async (req, res) => {
   const route = req.params.route;
   const city = new City ({ route: route, ...req.body.city});
-  console.log(city);
   await city.save();
   res.redirect(`/${route}`);
 });
 
 
 //directs to specific city
-app.get("/:route/:id", async (req, res) => {
+app.get("/:route/:croute", async (req, res) => {
   const route = req.params.route;
-  const id = req.params.id;
+  const croute = req.params.croute;
   try {
-    const city = await City.findById(id);
-    res.render("cities/show.ejs", { city });
+    const city = await City.find({croute: croute});
+    res.render("cities/show.ejs", { city } );
   } catch (error) {
     res.status(400).send("Invalid ID format");
   }
