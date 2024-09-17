@@ -13,9 +13,18 @@ const imageSchema = new Schema({
 const citySchema = new Schema({
   name: String,
   description: String,
-  state: String,
-  route: String,
-  croute:String,
+  state:{
+    type: String,
+    required: true,
+  },
+  route: {
+    type: String,
+    required: true,
+  },
+  croute:{
+    type: String,
+    required: true,
+  },
   geometry: {
     type: {
       type: String, 
@@ -33,8 +42,14 @@ const citySchema = new Schema({
     ecto:String,
     artH:String,
   },
-  GnL:[String],
-  speciality:[String],
+  GnL:{
+    type: [String],
+    required: true,
+  },
+  speciality:{
+    type: [String],
+    required: true,
+  },
 });
 
 citySchema.pre("save", function (next) {

@@ -22,6 +22,7 @@ const stateSchema = new Schema({
   geometry: {
     type: {
       type: String,
+      default: "Point",
       enum: ["Point"],
       required: true,
     },
