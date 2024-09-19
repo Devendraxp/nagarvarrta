@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const City = require("./model/city.js");
 const State = require("./model/state.js");
+const food = require("./model/food.js");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -84,6 +85,8 @@ app.get("/:route/:croute", async (req, res) => {
     res.status(400).send("Invalid ID format");
   }
 });
+
+
 
 app.listen(port, () => {
   console.log(`Server started at ${port}`);

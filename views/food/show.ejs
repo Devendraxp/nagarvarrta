@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <% if (city && city.length > 0) { %>
+                <h1><%= city[0].croute %></h1>
+            <% } else { %>
+                <h1>City not found pp</h1>
+            <% } %>
+            </div>
+            <div class="card-body">
+                <% if (food && food.length > 0) { %>
+                    <h3><%= food[0].name %></h3>
+                <% } else { %>
+                    <h3>food Items not found</h3>
+                <% } %>
+                
+                <h3>famous authentic food items</h3>
+                 <ul>
+                <% food[0].description.forEach((item)=>{ %>
+                    <li><%= item %></li>
+                <% }) %>
+            </ul>
+
+                <h3>History</h3>
+                <p>
+                    <%=food[0].history.key1%>
+                </p>
+            </div>  
+    </div>
+</body>
